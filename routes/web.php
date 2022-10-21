@@ -25,6 +25,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/planner', function () {
+        return view('planner.planner');
+    })->name('planner');
+    Route::get('/calendar', function () {
+        return view('calendar.view');
+    })->name('calendar');
 });
 
 // Redirects

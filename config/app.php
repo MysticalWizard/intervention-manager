@@ -185,6 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Asantibanez\LivewireCalendar\LivewireCalendarServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         
         /*
@@ -214,5 +215,6 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
+    "LivewireCalendar" => Asantibanez\LivewireCalendar\LivewireCalendarFacade::class,
 
 ];

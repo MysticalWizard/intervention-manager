@@ -43,6 +43,15 @@
                     {{ __('Log in') }}
                 </x-jet-button>
             </div>
+            <div class="py-2 mt-2">
+                <div class="border-t border-gray-200"></div>
+            </div>
+            <div class="text-center mt-2">
+                <span class="text-sm">{{ __('Don\'t have an account?') }}</span>
+                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
+                    {{ __('Register Here') }}
+                </a>
+            </div>
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
